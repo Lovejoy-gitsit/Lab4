@@ -20,28 +20,28 @@ namespace Lab4
                 input = int.Parse(Console.ReadLine());
                 
                 Console.Write($"{"Number", -10}");
-                Console.Write($"{"Squared"}".PadRight(10));
-                Console.WriteLine($"{"Cubed"}".PadRight(10));
+                Console.Write($"{"Squared",-10}");
+                Console.WriteLine($"{"Cubed"}");
 
                 Console.Write($"{"=====", -10}");
                 Console.Write($"{"=====",-10}");
-                Console.WriteLine($"{"=====",-10}");
+                Console.WriteLine($"{"====="}");
 
-               for (int i = 1; i <= input; i++)
+                for (int i = 1; i <= input; i++)
                 {
                     double squared = Math.Pow(i, 2);
                     double cubed = Math.Pow(i, 3);
-                    
-                    Console.WriteLine(i);
+
+                    Console.Write($"{i, -10}");
 
                     
                     //double squared = Math.Pow(i, 2);
-                    Console.Write($"{squared,10}");
+                    Console.Write($"{squared,-10}");
 
                     
                     
                     //double cubed = Math.Pow(i, 3);
-                    Console.WriteLine($"{cubed,10}");
+                    Console.WriteLine($"{cubed}");
                     
                 }
                 string userInput;
